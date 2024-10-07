@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <header>
-        <h1>Modals de um <em>jeito fácil</em> de entender</h1>
+        <h1>Modal de um <em>jeito fácil</em> de fazer</h1>
       </header>
       <main>
         <p>
@@ -32,9 +32,9 @@
           ducimus fugiat autem ipsam repellat quaerat in.
         </p>
 
-        <button class="button open-modal">Abrir modal</button>
+        <button class="button open-modal">Abrir modal pop-up</button>
 
-        <!-- INICIO MODAL -->
+        <!-- INICIO MODAL POP-UP -->
         <dialog class="modal" id="modal">
           <h2>Um titulo interessante</h2>
           <p>
@@ -49,7 +49,27 @@
           </p>
           <button class="button close-modal">Fechar modal</button>
         </dialog>
-        <!-- FIM MODAL -->
+        <!-- FIM MODAL POP-UP -->
+
+        <button class="button open-form">Abrir modal form</button>
+
+        <!-- INICIO FORMULARIO MODAL -->
+        <dialog class="modal-form" id="modal-form">
+          <h2>Formulário de Cadastro</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, deleniti doloribus
+            aperiam velit nihil enim. Omnis ea quam, atque eius itaque dolorum architecto, quia
+            repellat saepe dolore id, in aspernatur.
+          </p>
+          <form class="form" method="dialog">
+            <label>Seu nome<input type="text" /></label>
+            <label>Seu email <input type="email" /></label>
+            <button class="button" type="submit">submit form</button>
+          </form>
+
+          <button class="button close-form">Fechar modal</button>
+        </dialog>
+        <!-- FIM FORMULARIO MODAL -->
       </main>
       <footer>
         <p>
@@ -63,5 +83,6 @@
       </footer>
     </div>
     <script src="modal.js"></script>
+    <script src="modal-form.js"></script>
   </body>
 </html>
