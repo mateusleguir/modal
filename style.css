@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* altura mínima de 100% da viewport */
+}
+
+header {
+  text-align: center;
+}
+
+header > h1 > em {
+  color: rgb(38, 95, 121);
+}
+
+main {
+  padding: 2rem;
+  flex: 1; /* faz o conteúdo principal crescer para ocupar o espaço disponível */
+  max-width: 800px; /* Define a largura máxima do conteúdo */
+  margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+  padding: 20px; /* Adiciona espaçamento interno */
+}
+
+.modal {
+  max-width: 50ch;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+
+  & > * {
+    margin: 0 0 0.5rem 0;
+  }
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+footer > p > a {
+  text-decoration: none;
+  font-weight: bolder;
+}
